@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 1px solid blue; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+    margin: 0 auto;
+    width: 1024px;
+}
+/*----頁首----*/
+.icon {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	background-color: rgb(236, 233, 233);
+}
+
+.icon-item p{
+	display: inline-block;
+	padding: 5px;
+}
+
+.icon-item:first-child{
+	border-right: 3px solid #918f8f;
+}
+
+
+.icon-item p{
+	font-size: 16px;
+}
+
+.header{
+    /* margin-bottom: 30px; */
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header li:first-child {
+	border-bottom: 4px solid #1ac773;
+	/* margin-bottom: 30px; */
+	padding: 10px 0;
+}
+
+.header li {
+	font-size: 20px;
+	display: inline-block;
+	margin: 10px 15px;
+	color: #1ac773;
+	font-weight: bold;
+}
+
+/*----banner----*/
+.banner {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 330px;
+	background-color: #ccc;
+	background-image: url(/images/banner.png);
+	object-fit: cover;
+	/* padding: 100px; */
+	margin-bottom: 50px;
+}
+
+.text-box {
+	width: 100%;
+	background-color: #000000;
+	opacity: 0.7;
+	padding: 20px;
+}
+
+.text-word p{
+	font-size: 36px;
+	text-align: left;
+	color: #FFFF;
+	margin: 15px 0;
+}
+
+/*----course----*/
+.course {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+
+.item {
+	box-sizing: border-box;
+	width: 300px;
+	box-shadow: 3px 0px  3px 3px #ccc;
+	margin: 20px;
+}
+.item h2{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.item p {
+	font-size: 16px;
+	padding: 10px;
+	margin: 10px;
+	line-height: 1.2rem;	
+}
+/*----table----*/
+.table {
+	width: 100%;
+}
+.table tr,.table td{
+	border-bottom: 1px solid rgb(236, 228, 228);
+	font-size: 24px;
+	padding: 15px 40px;
+}
+.table tr:first-child {
+	background-color: rgb(238, 235, 235);
+}
+
+.green {
+	color: #1ac773;
+	font-weight: 600;
+}
+.table-title h3{
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+}
+.table-content {
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+	padding: 10px;
+}
+/*----form----*/
+.form {
+    background-image: linear-gradient(#075B4B  , #2DAF96 );
+}
+
+.form-title {
+	font-size: 32px;
+	padding-top: 15px;
+}
+
+.form-title h3{
+	font-weight: bold;
+	text-align: center;
+	margin: 10px;
+	color: #fff;
+}
+
+.form-content {
+    display: flex;
+    justify-content: space-around;
+	margin: 20px;
+}
+
+.form-text input{
+    display: block;
+    width: 450px;
+    height: 300px;
+	border-radius: 6px;
+	margin-bottom: 30px;
+}
+
+.form-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 600px;
+    height: 300px;
+}
+
+.form-info input {
+    display: block;
+    width: 500px;
+    height: 40px;
+    margin-top: 8px;
+	border-radius: 6px;
+}
+
+.form-info {
+	color: #fff;
+	font-size: 16px;
+}
+
+.form button {
+	display: block;
+	margin: 15px 10px 0px 0px;
+	padding: 5px 20px;
+	font-size: 20px;
+	background: #1ac773;
+	border-radius: 6px;
+	border: transparent;
+}
+
+.form button a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.form button:hover {
+	background-color: rgb(9, 119, 68);
+}
+/*----頁尾----*/
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    background:#fff;
+    color: #000;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.footer p {
+	padding: 10px;
+	margin: 0 15px;
+}
+
+.footer span {
+	color: palevioletred;
+	font-weight: 600;
+}
